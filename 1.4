@@ -1,0 +1,33 @@
+start
+new a number
+new b number
+new c number
+new d number
+new x number
+set a 90
+set b 70
+set c 50
+set d 30
+set x 54
+
+if (x > d)
+if (x > c)
+if (x > b)
+if (x > a)
+log string "Ряд - " >> x >> ">" >> a >> ">" >> b >> ">" >> c >> ">" >> d
+else
+log string "Ряд - " >> a >> ">" >> x >> ">" >> b >> ">" >> c >> ">" >> d
+else
+log string "Ряд - " >> a >> ">" >> b >> ">" >> x >> ">" >> c >> ">" >> d
+else
+log string "Ряд - " >> a >> ">" >> b >> ">" >> c >> ">" >> x >> ">" >> d
+else
+log string "Ряд - " >> a >> ">" >> b >> ">" >> c >> ">" >> d >> ">" >> x
+close
+
+delete a
+delete b
+delete c
+delete d
+delete x
+finish
